@@ -1,4 +1,4 @@
-# Ex.No:3(D) STRING TOKENIZER IN JAVA
+# Ex.No:3(D) STRING BUILDER IN JAVA
 
 ## AIM:
 To tokenize a string using multiple delimiters and display each token in Java.
