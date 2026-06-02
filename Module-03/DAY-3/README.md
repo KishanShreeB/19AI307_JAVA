@@ -1,47 +1,44 @@
-# Ex.No:3(C)    STRING BUILDER IN JAVA
+# Ex.No:3(D) STRING TOKENIZER IN JAVA
 
 ## AIM:
-To Create a java program use replace() method replaces the given String from the specified beginIndex and endIndex and use stringbuilder
+To tokenize a string using multiple delimiters and display each token in Java.
 
 ## ALGORITHM :
-1.  Start the Program
-2.	Import `Scanner` and define class `replace`
-3.	In `main`:
--	a) Create `Scanner` object `sc`
--	b) Read a string `str` from user input
-4.	Create a `StringBuilder` object `sb` initialized with `str`
-5.	Use the `replace()` method to replace characters from index 1 to 3 with "Java"
-6.	Print the modified string using `sb.toString()`
-7.	End
 
-
-
-
+1. Initialize `Scanner` and read a string input from the user.
+2. Create a `StringTokenizer` object with the input string and delimiters `://.`.
+3. Check if there are more tokens available using `hasMoreTokens()`.
+4. Use `nextToken()` to retrieve and display each token one by one.
+5. Continue the process until all tokens are displayed.
 
 
 ## PROGRAM:
  ```
-/*
-Program to implement a String Builder using Java
-Developed by: 
-RegisterNumber:  
-*/
+
+Program to implement a class & objects using Java
+Developed by: Kishan Shree B
+RegisterNumber: 212223100022
+
+import java.util.*;
+
+public class Demo{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String str= sc.nextLine();
+        StringTokenizer t= new StringTokenizer(str, "://.", true);
+
+        while (t.hasMoreTokens()) {
+            System.out.println(t.nextToken());
+        }
+    }
+}
+
 ```
 
-## Sourcecode.java:
-
-
-
-
-
-
-
 ## OUTPUT:
+![Screenshot 2025-05-09 135612](https://github.com/user-attachments/assets/ce8dd089-1161-4cd5-b8b8-ac07ebf3c661)
 
 
 
 ## RESULT:
-Thus the java program use replace() method replaces the given String from the specified beginIndex and endIndex and use stringbuilder was executed successfully.
-
-
-
+Thus the java program To tokenize a string using multiple delimiters and display each token in Java executed successfully.
