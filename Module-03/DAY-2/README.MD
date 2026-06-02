@@ -1,4 +1,4 @@
-# Ex.No:3(C)    STRING BUILDER IN JAVA
+# Ex.No:3(B)    STRING BUFFER IN JAVA
 
 ## AIM:
 To Create a java program to convert string into a character array and display it in a specific format.
